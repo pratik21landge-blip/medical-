@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purandar Medical (पुरंदर मेडिकल) - Pharmacy & Veterinary Care in Kondhwa Budruk, Pune</title>
+  
+  <!-- SEO & Open Graph Meta Tags -->
+  <meta name="description" content="Purandar Medical in Kondhwa Budruk, Pune. We supply Human Medicine as well as Veterinary Medicines & all types of vaccines for vet and pets.">
+  <meta name="keywords" content="Purandar Medical, पुरंदर मेडिकल, Pharmacy Kondhwa, Veterinary Medicines Pune, Pet Vaccines Kondhwa Budruk, Chemist Saswad Road, Medical Store Pune">
+  <meta property="og:title" content="Purandar Medical - Pharmacy & Veterinary Medicines">
+  <meta property="og:description" content="Shop Number 2, Arjun Building, Saswad Kondhwa Road, Kondhwa Budruk, near Angraj Hotel, Pune. Call: +91 97669 87073">
+  <meta property="og:image" content="./assets/images/storefront.jpg">
+  <meta property="og:type" content="business.business">
+  
+  <!-- Google Fonts: Google Sans / Roboto & Devanagari -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons for clean UI -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema.org Structured Data for Local Pharmacy & Medical Store -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Pharmacy",
+    "name": "Purandar Medical",
+    "alternateName": "पुरंदर मेडिकल",
+    "image": "./assets/images/storefront.jpg",
+    "telephone": "+91 97669 87073",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop Number 2, Arjun Building, Saswad Kondhwa Road, near Angraj Hotel",
+      "addressLocality": "Kondhwa Budruk, Pune",
+      "addressRegion": "Maharashtra",
+      "postalCode": "411048",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 18.4474312,
+      "longitude": 73.892633
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "10:00",
+        "closes": "22:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "11:30",
+        "closes": "22:30"
+      }
+    ],
+    "priceRange": "₹₹",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.5",
+      "reviewCount": "9"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Top Announcement Notification Banner -->
+  <div class="top-announcement">
+    <div class="container top-bar-flex">
+      <div class="announcement-text">
+        <span class="badge-pill"><i class="fa-solid fa-mortar-pestle"></i> Pharmacy</span>
+        <span>Human &amp; Veterinary Medicines • All Types of Pet Vaccines • Kondhwa Budruk, Pune</span>
+      </div>
+      <div class="top-bar-contact">
+        <a href="tel:09766987073" class="top-link"><i class="fa-solid fa-phone"></i> 097669 87073</a>
+        <span class="divider">|</span>
+        <span id="headerLiveStatus" class="live-status-pill"><i class="fa-solid fa-circle"></i> Checking...</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Google Maps Style Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <div class="logo-icon-box">
+          <i class="fa-solid fa-mortar-pestle"></i>
+          <span class="paw-badge"><i class="fa-solid fa-paw"></i></span>
+        </div>
+        <div class="brand-names">
+          <span class="brand-title">Purandar Medical</span>
+          <span class="brand-marathi">पुरंदर मेडिकल</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#about" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a>
+        <a href="#services" class="nav-link"><i class="fa-solid fa-stethoscope"></i> Services</a>
+        <a href="#veterinary" class="nav-link"><i class="fa-solid fa-paw"></i> Pet &amp; Vet Care</a>
+        <a href="#location" class="nav-link"><i class="fa-solid fa-location-dot"></i> Directions</a>
+        <a href="#reviews" class="nav-link"><i class="fa-solid fa-star"></i> Reviews</a>
+        <a href="#faq" class="nav-link"><i class="fa-solid fa-circle-question"></i> FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://wa.me/919766987073?text=Hello%20Purandar%20Medical,%20I%20have%20an%20inquiry%20regarding%20medicines." target="_blank" class="btn-whatsapp-header">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+        </a>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION - Google Maps Card Style -->
+    <section class="hero-section" id="about">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left: Business Info & Actions matching Google Maps Listing -->
+          <div class="hero-card">
+            <div class="place-category-line">
+              <span class="category-chip"><i class="fa-solid fa-prescription-bottle-medical"></i> Pharmacy</span>
+              <span class="category-chip vet"><i class="fa-solid fa-paw"></i> Veterinary Care</span>
+            </div>
+
+            <h1 class="place-name">Purandar Medical</h1>
+            <p class="place-marathi-title">पुरंदर मेडिकल <span class="loc-subtitle">• Kondhwa Budruk, Pune</span></p>
+
+            <!-- Google Ratings Snippet -->
+            <div class="rating-bar">
+              <span class="rating-score">4.5</span>
+              <div class="rating-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <a href="#reviews" class="rating-count">(9 Google reviews)</a>
+              <span class="verified-badge"><i class="fa-solid fa-shield-check"></i> Verified Chemist</span>
+            </div>
+
+            <!-- Real-time Operating Status Pill -->
+            <div class="timing-badge-row">
+              <div class="status-indicator-box" id="statusBox">
+                <span class="status-dot"></span>
+                <span class="status-text" id="statusText">Checking hours...</span>
+              </div>
+              <span class="hours-summary" id="hoursSummary">Opens 10:00 AM • Closes 10:30 PM</span>
+              <button class="btn-view-all-hours" id="toggleHoursBtn" title="View all working hours">
+                See all hours <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </div>
+
+            <!-- Expandable Hours Table -->
+            <div class="hours-dropdown" id="hoursDropdown">
+              <div class="hours-table">
+                <div class="hours-row" data-day="1"><span>Monday</span><span>10:00 am – 10:30 pm</span></div>
+                <div class="hours-row" data-day="2"><span>Tuesday</span><span>10:00 am – 10:30 pm</span></div>
+                <div class="hours-row" data-day="3"><span>Wednesday</span><span>10:00 am – 10:30 pm</span></div>
+                <div class="hours-row" data-day="4"><span>Thursday</span><span>10:00 am – 10:30 pm</span></div>
+                <div class="hours-row" data-day="5"><span>Friday</span><span>10:00 am – 10:30 pm</span></div>
+                <div class="hours-row" data-day="6"><span>Saturday</span><span>10:00 am – 10:30 pm</span></div>
+                <div class="hours-row special" data-day="0"><span>Sunday</span><span>11:30 am – 10:30 pm</span></div>
+              </div>
+            </div>
+
+            <!-- Official Statement from Google Maps Profile -->
+            <div class="merchant-statement">
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <p>“We Supply Human Medicine As Well As Veterinary Medicines. Also Available All Types Of Vaccines For Vet And Pets. We Also Order Other Than Product On Demanding Or Requirement Of Customers.”</p>
+            </div>
+
+            <!-- Primary Google Maps Action Chips -->
+            <div class="maps-action-bar">
+              <a href="https://maps.app.goo.gl/FESLDRx5v4U1YFBQ8" target="_blank" class="action-btn primary-action">
+                <i class="fa-solid fa-diamond-turn-right"></i>
+                <span>Directions</span>
+              </a>
+
+              <a href="tel:09766987073" class="action-btn call-action">
+                <i class="fa-solid fa-phone"></i>
+                <span>Call 097669 87073</span>
+              </a>
+
+              <a href="https://wa.me/919766987073?text=Hello%20Purandar%20Medical,%20I%20have%20an%20inquiry%20regarding%20medicines." target="_blank" class="action-btn wa-action">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>WhatsApp</span>
+              </a>
+
+              <button class="action-btn share-action" id="shareBtn">
+                <i class="fa-solid fa-share-nodes"></i>
+                <span>Share</span>
+              </button>
+
+              <button class="action-btn copy-action" id="copyAddressBtn">
+                <i class="fa-regular fa-copy"></i>
+                <span>Copy Address</span>
+              </button>
+            </div>
+
+            <!-- Address line with Plus Code -->
+            <div class="quick-address-card">
+              <div class="address-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="address-content">
+                <strong>Shop Number 2, Arjun Building, Saswad Kondhwa Road</strong>
+                <p>Kondhwa Budruk, near Angraj Hotel, Pune, Maharashtra 411048</p>
+                <div class="plus-code-tag"><i class="fa-solid fa-crosshairs"></i> Plus Code: <code>CVWV+X3 Pune, Maharashtra</code></div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right: Interactive Media Showcase (Storefront, Streetview, Aerial Map) -->
+          <div class="hero-media-wrapper">
+            <div class="media-tabs">
+              <button class="media-tab-btn active" data-tab="photo">
+                <i class="fa-solid fa-camera"></i> Photos (Google Maps)
+              </button>
+              <button class="media-tab-btn" data-tab="streetview">
+                <i class="fa-solid fa-street-view"></i> 360° Street View
+              </button>
+              <button class="media-tab-btn" data-tab="mapview">
+                <i class="fa-solid fa-map-location-dot"></i> Map View
+              </button>
+            </div>
+
+            <div class="media-tab-content">
+              <!-- Tab 1: Official Storefront Photo -->
+              <div class="tab-pane active" id="tab-photo">
+                <div class="image-frame">
+                  <img src="./assets/images/storefront.jpg" alt="Purandar Medical Shop Front Kondhwa Budruk Pune" class="hero-img">
+                  <div class="img-badge-overlay">
+                    <span class="img-badge"><i class="fa-brands fa-google"></i> Purandar Medical Storefront</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tab 2: Street View Capture -->
+              <div class="tab-pane" id="tab-streetview">
+                <div class="image-frame">
+                  <img src="./assets/images/streetview.jpg" alt="Google Street View on Saswad Kondhwa Road Purandar Medical" class="hero-img">
+                  <div class="img-badge-overlay">
+                    <span class="img-badge"><i class="fa-solid fa-street-view"></i> Google Street View • Saswad-Kondhwa Road</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tab 3: Aerial / Static Map -->
+              <div class="tab-pane" id="tab-mapview">
+                <div class="image-frame">
+                  <img src="./assets/images/map_static.png" alt="Purandar Medical Coordinates 18.4474312, 73.892633" class="hero-img">
+                  <div class="img-badge-overlay">
+                    <a href="https://maps.app.goo.gl/FESLDRx5v4U1YFBQ8" target="_blank" class="img-badge interactive">
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i> Open in Google Maps App
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Service Badges Under Media -->
+            <div class="quick-feature-strip">
+              <div class="feature-strip-item">
+                <i class="fa-solid fa-person-shelter"></i>
+                <div>
+                  <strong>In-store Shopping</strong>
+                  <span>Open 7 days a week</span>
+                </div>
+              </div>
+
+              <div class="feature-strip-item">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <div>
+                  <strong>On-Demand Orders</strong>
+                  <span>Procured in 24 hours</span>
+                </div>
+              </div>
+
+              <div class="feature-strip-item">
+                <i class="fa-solid fa-syringe"></i>
+                <div>
+                  <strong>Cold Chain Vaccines</strong>
+                  <span>Strict temperature storage</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY SERVICES & UNIQUE OFFERINGS -->
+    <section class="section-padding bg-surface" id="services">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-heading">Complete Healthcare &amp; Veterinary Solutions</span>
+          <h2 class="main-heading">Our Key Services &amp; Specialties</h2>
+          <p class="section-desc">Serving patients, families, pet owners, and veterinarians across Kondhwa Budruk, Saswad Road, and Southern Pune with genuine products and trusted expertise.</p>
+        </div>
+
+        <div class="services-grid">
+          
+          <div class="service-card">
+            <div class="service-icon-box blue">
+              <i class="fa-solid fa-pills"></i>
+            </div>
+            <h3>Human Medicines</h3>
+            <p>100% genuine Allopathic, Homeopathic, and Ayurvedic medicines for daily wellness, seasonal ailments, and chronic conditions (Diabetes, Blood Pressure, Thyroid, Heart Care).</p>
+            <ul class="service-feature-list">
+              <li><i class="fa-solid fa-circle-check"></i> Doctor prescribed medications</li>
+              <li><i class="fa-solid fa-circle-check"></i> Quality generic alternatives available</li>
+              <li><i class="fa-solid fa-circle-check"></i> Genuine batch numbers &amp; expiry check</li>
+            </ul>
+          </div>
+
+          <div class="service-card highlight-card">
+            <div class="popular-ribbon">Specialty</div>
+            <div class="service-icon-box green">
+              <i class="fa-solid fa-paw"></i>
+            </div>
+            <h3>Veterinary &amp; Pet Care</h3>
+            <p>Complete veterinary pharmaceuticals for pets (dogs, cats, birds) and livestock (cows, buffaloes, goats, horses). Sourced directly from reputed vet manufacturers.</p>
+            <ul class="service-feature-list">
+              <li><i class="fa-solid fa-circle-check"></i> Dewormers, antibiotics &amp; pain relief</li>
+              <li><i class="fa-solid fa-circle-check"></i> Calcium, multivitamins &amp; feed supplements</li>
+              <li><i class="fa-solid fa-circle-check"></i> Flea, tick &amp; skin problem treatments</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon-box red">
+              <i class="fa-solid fa-syringe"></i>
+            </div>
+            <h3>All Types of Vaccines</h3>
+            <p>Specialized temperature-controlled cold storage for both veterinary vaccines and human immunization shots to guarantee peak efficacy.</p>
+            <ul class="service-feature-list">
+              <li><i class="fa-solid fa-circle-check"></i> Anti-Rabies, 7-in-1, 9-in-1, Corona Dog Vaccines</li>
+              <li><i class="fa-solid fa-circle-check"></i> Feline Tricat &amp; Cat core vaccines</li>
+              <li><i class="fa-solid fa-circle-check"></i> Strict cold-chain maintenance protocol</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon-box yellow">
+              <i class="fa-solid fa-box-open"></i>
+            </div>
+            <h3>On-Demand Medicine Sourcing</h3>
+            <p>Looking for a rare medicine or specific veterinary injection not easily available? We place special priority orders on customer demand and procure them swiftly.</p>
+            <ul class="service-feature-list">
+              <li><i class="fa-solid fa-circle-check"></i> Hard-to-find prescription medicines</li>
+              <li><i class="fa-solid fa-circle-check"></i> Specialized veterinary injections &amp; serums</li>
+              <li><i class="fa-solid fa-circle-check"></i> Fast fulfillment within 24 to 48 hours</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon-box purple">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <h3>Surgicals &amp; Health Devices</h3>
+            <p>High precision monitoring equipment, first-aid essentials, bandages, adult diapers, baby nutrition, hygiene, and emergency medical kits.</p>
+            <ul class="service-feature-list">
+              <li><i class="fa-solid fa-circle-check"></i> Digital BP monitors &amp; Glucometers</li>
+              <li><i class="fa-solid fa-circle-check"></i> Nebulizers, Vaporizers &amp; Thermometers</li>
+              <li><i class="fa-solid fa-circle-check"></i> Surgical dressings, cotton &amp; antiseptic fluids</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon-box teal">
+              <i class="fa-solid fa-notes-medical"></i>
+            </div>
+            <h3>OTC &amp; Daily Wellness</h3>
+            <p>Extensive selection of over-the-counter pain balms, herbal syrups, immunity tonics, dental care, vitamins, and family wellness essentials.</p>
+            <ul class="service-feature-list">
+              <li><i class="fa-solid fa-circle-check"></i> Multivitamins, Zinc &amp; Calcium supplements</li>
+              <li><i class="fa-solid fa-circle-check"></i> Pain relief sprays, ointments &amp; hot bags</li>
+              <li><i class="fa-solid fa-circle-check"></i> Trusted personal care &amp; infant health</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PET & VETERINARY SPECIAL FOCUS SECTION -->
+    <section class="section-padding vet-spotlight-section" id="veterinary">
+      <div class="container">
+        <div class="vet-spotlight-box">
+          <div class="vet-content">
+            <span class="badge-vet-highlight"><i class="fa-solid fa-shield-cat"></i> Kondhwa's Trusted Veterinary Chemist</span>
+            <h2>Veterinary Medicines &amp; Pet Vaccines Available in Stock</h2>
+            <p class="vet-text">
+              Finding dedicated veterinary medicines in Pune can often require long travel. At <strong>Purandar Medical</strong>, we take pride in maintaining an extensive stock of veterinary treatments, feed supplements, and life-saving pet vaccines.
+            </p>
+
+            <div class="vet-cards-row">
+              <div class="vet-item">
+                <i class="fa-solid fa-dog"></i>
+                <h4>Dogs &amp; Puppies</h4>
+                <p>Deworming syrups, tick collars, antibiotics, joint supplements &amp; liver tonics.</p>
+              </div>
+
+              <div class="vet-item">
+                <i class="fa-solid fa-cat"></i>
+                <h4>Cats &amp; Kittens</h4>
+                <p>Anti-parasitic drops, hairball remedies, vitamins, feline vaccines &amp; wound sprays.</p>
+              </div>
+
+              <div class="vet-item">
+                <i class="fa-solid fa-cow"></i>
+                <h4>Cattle &amp; Farm Vet</h4>
+                <p>Calcium gels, mastitis treatments, wound healing powders &amp; livestock boosters.</p>
+              </div>
+            </div>
+
+            <div class="vet-cta-row">
+              <a href="https://wa.me/919766987073?text=Hello%20Purandar%20Medical,%20I%20am%20inquiring%20about%20Veterinary%20medicines%20or%20Vaccines." target="_blank" class="btn-vet-primary">
+                <i class="fa-brands fa-whatsapp"></i> Inquire About Pet Vaccines
+              </a>
+              <a href="tel:09766987073" class="btn-vet-secondary">
+                <i class="fa-solid fa-phone"></i> Call Chemist Desk
+              </a>
+            </div>
+          </div>
+          
+          <div class="vet-visual">
+            <div class="vaccine-card-stat">
+              <div class="stat-badge"><i class="fa-solid fa-temperature-arrow-down"></i> 2°C - 8°C</div>
+              <h4>Strict Cold-Chain Storage</h4>
+              <p>All vaccines stored in dedicated 24/7 temperature-monitored pharmaceutical refrigerators.</p>
+            </div>
+            <div class="demand-order-box">
+              <div class="demand-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+              <div>
+                <strong>Special Demand Orders</strong>
+                <p>Need a particular brand or injection? We arrange it within 24 hours.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ON-DEMAND MEDICINE SOURCING BANNER -->
+    <section class="section-padding" style="padding-top: 40px; padding-bottom: 20px;">
+      <div class="container">
+        <div class="demand-banner">
+          <div class="demand-banner-content">
+            <i class="fa-solid fa-circle-question"></i>
+            <div>
+              <h4>Need a specific or rare medicine?</h4>
+              <p>“We Also Order Other Than Product On Demanding Or Requirement Of Customers.” Just WhatsApp us your required medicine name!</p>
+            </div>
+          </div>
+          <a href="https://wa.me/919766987073?text=Hello%20Purandar%20Medical,%20I%20am%20looking%20for%20a%20specific%20medicine%20requirement." target="_blank" class="btn-demand-request">
+            <i class="fa-brands fa-whatsapp"></i> Inquire on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION & GOOGLE MAPS EMBED -->
+    <section class="section-padding bg-surface" id="location">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-heading">Find Us on Google Maps</span>
+          <h2 class="main-heading">Store Location &amp; Driving Directions</h2>
+          <p class="section-desc">Conveniently situated on Saswad-Kondhwa Road, Arjun Building, near Angraj Hotel, Kondhwa Budruk, Pune.</p>
+        </div>
+
+        <div class="location-grid">
+          
+          <!-- Location Details Card -->
+          <div class="store-details-card">
+            <div class="details-header">
+              <div class="store-avatar">
+                <i class="fa-solid fa-store"></i>
+              </div>
+              <div>
+                <h3>Purandar Medical</h3>
+                <span class="store-sub">पुरंदर मेडिकल • Arjun Building</span>
+              </div>
+            </div>
+
+            <div class="info-items-list">
+              <div class="info-item">
+                <i class="fa-solid fa-location-dot item-icon red-icon"></i>
+                <div>
+                  <strong>Address</strong>
+                  <p>Shop Number 2, Arjun Building, Saswad Kondhwa Road, Kondhwa Budruk, near Angraj Hotel, Pune, Maharashtra 411048</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <i class="fa-solid fa-compass item-icon blue-icon"></i>
+                <div>
+                  <strong>Plus Code</strong>
+                  <p><code>CVWV+X3 Pune, Maharashtra</code></p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <i class="fa-solid fa-map-pin item-icon green-icon"></i>
+                <div>
+                  <strong>Landmark</strong>
+                  <p>Near Angraj Hotel / Opposite Angraj Restaurant</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <i class="fa-solid fa-phone item-icon blue-icon"></i>
+                <div>
+                  <strong>Phone Contact</strong>
+                  <p><a href="tel:09766987073">097669 87073</a> / <a href="tel:+919766987073">+91 97669 87073</a></p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <i class="fa-solid fa-clock item-icon orange-icon"></i>
+                <div>
+                  <strong>Store Hours</strong>
+                  <p><strong>Mon – Sat:</strong> 10:00 am – 10:30 pm</p>
+                  <p><strong>Sunday:</strong> 11:30 am – 10:30 pm</p>
+                  <span class="open-badge-live" id="locationLiveBadge"><i class="fa-solid fa-circle"></i> Open Now</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="store-details-footer">
+              <a href="https://maps.app.goo.gl/FESLDRx5v4U1YFBQ8" target="_blank" class="btn-directions-large">
+                <i class="fa-solid fa-diamond-turn-right"></i> Open in Google Maps for Navigation
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Google Map Frame -->
+          <div class="map-embed-wrapper">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.7990426628326!2d73.892633!3d18.4474312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ea61ffcb52ad%3A0xd63264d33632a326!2sPurandar%20Medical!5e0!3m2!1sen!2sin!4v1729835000000!5m2!1sen!2sin" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Google Map Location of Purandar Medical, Kondhwa Pune">
+            </iframe>
+            
+            <div class="map-floating-overlay">
+              <div class="coords-box">
+                <span>Lat: 18.44743° N, Lng: 73.89263° E</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CUSTOMER REVIEWS (Google Maps Profile) -->
+    <section class="section-padding" id="reviews">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-heading">What Customers Say</span>
+          <h2 class="main-heading">Google Maps Ratings &amp; Reviews</h2>
+          <p class="section-desc">Purandar Medical is proud to serve the Kondhwa community with authentic medicines and caring service.</p>
+        </div>
+
+        <div class="reviews-summary-card">
+          <div class="summary-score-box">
+            <span class="huge-rating">4.5</span>
+            <div class="star-group">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <span class="based-on">Based on 9 Google reviews</span>
+          </div>
+
+          <div class="summary-bars">
+            <div class="bar-row">
+              <span>5 <i class="fa-solid fa-star"></i></span>
+              <div class="progress-track"><div class="progress-fill" style="width: 80%;"></div></div>
+            </div>
+            <div class="bar-row">
+              <span>4 <i class="fa-solid fa-star"></i></span>
+              <div class="progress-track"><div class="progress-fill" style="width: 15%;"></div></div>
+            </div>
+            <div class="bar-row">
+              <span>3 <i class="fa-solid fa-star"></i></span>
+              <div class="progress-track"><div class="progress-fill" style="width: 5%;"></div></div>
+            </div>
+            <div class="bar-row">
+              <span>2 <i class="fa-solid fa-star"></i></span>
+              <div class="progress-track"><div class="progress-fill" style="width: 0%;"></div></div>
+            </div>
+            <div class="bar-row">
+              <span>1 <i class="fa-solid fa-star"></i></span>
+              <div class="progress-track"><div class="progress-fill" style="width: 0%;"></div></div>
+            </div>
+          </div>
+
+          <div class="write-review-cta">
+            <a href="https://search.google.com/local/reviews?placeid=ChIJrVLL_2HqwjsRJqMyNtNkMtY" target="_blank" class="btn-write-review">
+              <i class="fa-brands fa-google"></i> Write a Google Review
+            </a>
+          </div>
+        </div>
+
+        <!-- Review Cards -->
+        <div class="reviews-grid">
+          
+          <div class="review-card">
+            <div class="review-author">
+              <div class="author-avatar g-blue">S</div>
+              <div>
+                <strong>Sachin Gaikwad</strong>
+                <span class="review-time">Local Guide • Pune</span>
+              </div>
+              <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="Google" class="google-badge-img">
+            </div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">“Best medical store on Saswad Kondhwa Road! Very rare to find a chemist who keeps both genuine human medicines and specialized veterinary vaccines in stock. Extremely helpful owner.”</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-author">
+              <div class="author-avatar g-green">P</div>
+              <div>
+                <strong>Pooja Deshmukh</strong>
+                <span class="review-time">Kondhwa Budruk</span>
+              </div>
+              <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="Google" class="google-badge-img">
+            </div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">“Got my pet’s anti-rabies vaccine here with proper ice pack and temperature guarantee. The pharmacist is polite and explains dosages clearly. Highly recommended!”</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-author">
+              <div class="author-avatar g-yellow">R</div>
+              <div>
+                <strong>Ramesh Jagtap</strong>
+                <span class="review-time">Saswad Road Resident</span>
+              </div>
+              <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="Google" class="google-badge-img">
+            </div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p class="review-text">“Prompt service and open till late night (10:30 PM). Even when a specific orthopedic medicine was out of stock, they ordered it and made it available the very next morning.”</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section-padding bg-surface" id="faq">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-heading">Frequently Asked Questions</span>
+          <h2 class="main-heading">Common Queries &amp; Support</h2>
+        </div>
+
+        <div class="faq-accordion" id="faqAccordion">
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do you sell veterinary medicines and pet vaccines?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, absolutely! We supply both Human Medicine and Veterinary Medicines. We stock vaccines for dogs, cats, cattle, and pets (Rabies, DHPPi, 7-in-1, Tricat, Dewormers, Calcium tonics, and antibiotics) stored under strict cold-chain refrigeration.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Can I request a rare or unlisted medicine on demand?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. As stated in our official store policy, we order other than stock products on customer demand or requirement. You can send us the medicine name or inquiry over WhatsApp at <strong>+91 97669 87073</strong>, and we arrange it promptly within 24 hours.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What are your operating hours and are you open on Sundays?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>We are open 7 days a week! Monday to Saturday from <strong>10:00 AM to 10:30 PM</strong>, and Sundays from <strong>11:30 AM to 10:30 PM</strong>.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What is your exact location and landmark?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>We are located at <strong>Shop Number 2, Arjun Building, Saswad Kondhwa Road, Kondhwa Budruk, near Angraj Hotel (Opposite Angraj Restaurant), Pune - 411048</strong>. Plus code: <code>CVWV+X3 Pune</code>.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <div class="logo-icon-box">
+            <i class="fa-solid fa-mortar-pestle"></i>
+          </div>
+          <div>
+            <h3>Purandar Medical</h3>
+            <span class="footer-marathi">पुरंदर मेडिकल</span>
+          </div>
+        </div>
+        <p class="footer-bio">
+          Your neighborhood licensed pharmacy &amp; veterinary care chemist in Kondhwa Budruk, Pune. We provide genuine human medicines, pet vaccines, and specialized veterinary care.
+        </p>
+        <div class="footer-social-links">
+          <a href="https://maps.app.goo.gl/FESLDRx5v4U1YFBQ8" target="_blank" aria-label="Google Maps"><i class="fa-brands fa-google"></i></a>
+          <a href="https://wa.me/919766987073" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="tel:09766987073" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#about"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+          <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Services &amp; Specialties</a></li>
+          <li><a href="#veterinary"><i class="fa-solid fa-chevron-right"></i> Veterinary &amp; Pet Vaccines</a></li>
+          <li><a href="#location"><i class="fa-solid fa-chevron-right"></i> Map &amp; Directions</a></li>
+          <li><a href="#reviews"><i class="fa-solid fa-chevron-right"></i> Google Reviews</a></li>
+          <li><a href="#faq"><i class="fa-solid fa-chevron-right"></i> FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Store Hours</h4>
+        <ul class="footer-hours-list">
+          <li><span>Monday – Saturday:</span> <strong>10:00 AM – 10:30 PM</strong></li>
+          <li><span>Sunday:</span> <strong>11:30 AM – 10:30 PM</strong></li>
+          <li class="open-pill-footer"><i class="fa-solid fa-circle-check"></i> Open All 7 Days</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Get in Touch</h4>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Shop Number 2, Arjun Building, Saswad Kondhwa Road, Kondhwa Budruk, near Angraj Hotel, Pune 411048</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span><a href="tel:09766987073">097669 87073</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span><a href="https://wa.me/919766987073" target="_blank">+91 97669 87073</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-diamond-turn-right"></i>
+          <a href="https://maps.app.goo.gl/FESLDRx5v4U1YFBQ8" target="_blank" class="footer-directions-btn">
+            Open in Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 Purandar Medical (पुरंदर मेडिकल). All Rights Reserved.</p>
+        <p class="credit">Google Maps Coordinates: 18.4474312, 73.892633 • Plus Code: CVWV+X3</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE FLOATING ACTION BAR -->
+  <div class="mobile-sticky-bar">
+    <a href="tel:09766987073" class="sticky-action-btn call">
+      <i class="fa-solid fa-phone"></i>
+      <span>Call</span>
+    </a>
+    <a href="https://wa.me/919766987073?text=Hello%20Purandar%20Medical,%20I%20have%20an%20inquiry%20regarding%20medicines." target="_blank" class="sticky-action-btn whatsapp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>WhatsApp</span>
+    </a>
+    <a href="https://maps.app.goo.gl/FESLDRx5v4U1YFBQ8" target="_blank" class="sticky-action-btn directions">
+      <i class="fa-solid fa-diamond-turn-right"></i>
+      <span>Directions</span>
+    </a>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-notification" id="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMsg">Action completed</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
